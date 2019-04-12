@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import vueResource from 'vue-resource'
 import VueJsonp from 'vue-jsonp'
-import {store} from './store/store'
+import store from './store/store'
 
 Vue.use(VueJsonp)
 Vue.use(vueResource)
@@ -16,7 +16,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
-  store:store,
+  store,
   components: { App },
   template: '<App/>'
 })

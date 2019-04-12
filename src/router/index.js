@@ -6,6 +6,7 @@ import myVuex from '@/components/myVuex'
 import shop from '@/components/shop'
 import li from '@/components/li'
 import lunbotu from '@/components/lunbotu'
+import VuexDemo from '@/components/VuexDemo'
 
 Vue.use(Router)
 
@@ -16,10 +17,14 @@ export default new Router({
     //   name: 'HelloWorld',
     //   component: HelloWorld
     // },
+    // {
+    //   path: '/',
+    //   component: lunbotu
+    // },
     {
       path: '/',
-      component: lunbotu
-    }
+      component: VuexDemo
+    },
     // {
     //   path: '/',
     //   name: 'zheng',
