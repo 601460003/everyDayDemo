@@ -1,6 +1,5 @@
 <template>
     <div class="logo">
-      <!--<div class="div">你是大SB</div>-->
 
       <header><img src="../assets/图像-1_10.png" alt=""></header>
       <figure>  <img src="../assets/图像-1_03.png" alt=""></figure>

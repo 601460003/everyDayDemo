@@ -2,7 +2,7 @@
 <template>
   <div>
     <!--实现三栏布局-->
-    <div style="height: 200px"></div>
+    <div style="height: 60px"></div>
     <div class="div">
       <div class="a"></div>
       <div class="b"></div>

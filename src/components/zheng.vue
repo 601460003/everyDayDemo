@@ -11,7 +11,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
   div{
     width: 500px;
     height: 500px;

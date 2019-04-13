@@ -3,44 +3,57 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import zheng from '@/components/zheng'
 import myVuex from '@/components/myVuex'
-import shop from '@/components/shop'
-import li from '@/components/li'
+import shuju from '@/components/shuju'
 import lunbotu from '@/components/lunbotu'
 import VuexDemo from '@/components/VuexDemo'
+import home from '@/components/home'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'HelloWorld',
-    //   component: HelloWorld
-    // },
-    // {
-    //   path: '/',
-    //   component: lunbotu
-    // },
     {
       path: '/',
-      component: VuexDemo
+      component: home,
     },
-    // {
-    //   path: '/',
-    //   name: 'zheng',
-    //   component: zheng
-    // },
-   // {
-   //   path: '/',
-   //   component: myVuex
-   // },
-   //  {
-   //    path: '/',
-   //    component: li
-   //  }
-   //  {
-   //    path: '/',
-   //    component: shop
-   //  },
+    {
+      path: '/home',
+      component: home,
+      children:[
+        {
+          path: '/home/HelloWorld ',
+          name: 'HelloWorld',
+          component: HelloWorld
+        },
+        {
+          path: 'lunbotu',
+          name: 'lunbotu',
+          component: lunbotu
+        },
+        {
+          path: '/home/VuexDemo',
+          name: 'VuexDemo',
+          component: VuexDemo
+        },
+        {
+          path: 'zheng',
+          name: 'zheng',
+          component: zheng
+        },
+        {
+          path: 'myVuex',
+          name:'myVuex',
+          component: myVuex
+        },
+
+        {
+          path: 'shuju',
+          name:'shuju',
+          component: shuju
+        }
+      ]
+    },
+
+
   ]
 })

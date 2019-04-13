@@ -16,11 +16,11 @@ const state = {                             //第三步定义导出函数的方�
 //包含多个更新state函数对象
 const mutations = {                                       //第六步把方法定义在库管员内，通过commit去提交
   //两个方法，一个是增加的
-  ADDCOUNT(state) {
+  ADDCOUNT(state,payload) {                //在大多数情况下，载荷应该是一个对象，这样可以包含多个字段并且记录的 mutation 会更易读：
     state.count++
   },
   //两个方法，一个是减少的
-  DELCOUNT(state) {
+  DELCOUNT(state) {                       //使用常量(用大写表示官方规范)替代 Mutation 事件类型==必须是同步函数
     state.count--
   },
 };
