@@ -31,6 +31,7 @@
 <style scoped>
 .container{
   display: flex;
+  text-align: center;
 }
   .container div{
     flex:1;

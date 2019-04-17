@@ -23,8 +23,12 @@
 </template>
 
 <script>
+  import axios from 'axios'
     export default {
-        name: "lunbotu"
+        created(){
+          axios.all('/aa','aaa')
+        }
+
     }
 </script>
 
