@@ -37,3 +37,10 @@
     flex:1;
   }
 </style>
+自适应移动端插件rem
+1.npm i lib-flexible --save
+2.然后在项目入口文件main.js里引入lib-flexible import 'lib-flexible'
+3.记得配置meta标签,在index.html文件当中<meta name="viewport" content="width=device-width, initial-scale=1.0">
+4.npm i px2rem-loader --save-dev
+5.我们只要在until.js里找到cssLoader这个对象，在它下面再加一个px2remLoader对象即可
+http://www.cnblogs.com/zlbrother/p/7823380.html
