@@ -25,3 +25,21 @@ overflow: hidden;
 text-overflow: ellipsis;
 -webkit-line-clamp: 2;
 -webkit-box-orient: vertical;
+
+ window.onload = function () {
+   var aul = document.getElementById('ul1');
+   var ali = aul.getElementsByTagName('li');
+
+   for(var i =0;i<ali.length;i++){
+      ali[i].index = i;
+      ali[i].onclick = function () {
+        for(var i =0;i<ali.length;i++){
+          ali[i].className = ''
+        }
+        this.className='action';
+      }
+
+   }
+
+ }
+</script>
