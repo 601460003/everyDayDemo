@@ -1,5 +1,7 @@
 # zhang https://www.cnblogs.com/zlbrother/p/7823380.html vue自适应插件
 
+mock：https://www.easy-mock.com/
+
 > A Vue.js project
 
 ## Build Setup
